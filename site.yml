@@ -1,17 +1,17 @@
 ---
 site:
-  title: "Private LLM as a Service - A Practical Introduction with OpenShift AI"
+  title: Private LLM as a Service - A Practical Introduction with OpenShift AI
+  url: https://github.com/rhpds/private-rh1-llmaas-showroom
   start_page: modules::index.adoc
 
 content:
-  edit_url: 'https://github.com/rhpds/private-summit-llmaas-showroom/edit/dev/{path}'
   sources:
     - url: .
       start_path: content
 
 ui:
   bundle:
-    url: https://github.com/rhpds/rhdp_showroom_theme/releases/download/v0.0.1/ui-bundle.zip
+    url: https://github.com/rhpds/rhdp_showroom_theme/releases/download/rh-one-2025/ui-bundle.zip
     snapshot: true
   supplemental_files:
     - path: ./content/supplemental-ui
@@ -22,6 +22,11 @@ ui:
 
 runtime:
   cache_dir: ./.cache/antora
+
+antora:
+  extensions:
+    - require: ./content/lib/dev-mode.js
+      enabled: true
 
 output:
   dir: ./www

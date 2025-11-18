@@ -1,0 +1,16 @@
+---
+type: showroom
+
+# Set the left column width to 30%
+default_width: 30
+# Persist the URL state so browser refresh doesn't reset the UI
+persist_url_state: true
+
+tabs:
+  - name: Bastion
+    path: /wetty
+    port: 443
+  - name: OpenShift AI Dashboard
+    url: 'https://rhods-dashboard-redhat-ods-applications.apps.cluster-guid.guid.sandbox.opentlc.com/'
+  - name: OpenShift Console
+    url: 'https://console-openshift-console.apps.cluster-guid.guid.sandbox.opentlc.com'
